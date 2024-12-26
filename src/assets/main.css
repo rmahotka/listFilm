@@ -1,0 +1,53 @@
+:root{
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-gray-light: #292D32;
+    --color-blue: #2C81FB;
+    --color-red: #E81A0C;
+    --color-purple: #702BFE;
+    --color-green: #039C55;
+}
+
+body{
+    font-family: "Roboto", serif;
+    padding: 0;
+    margin: 0;
+    background: var(--color-black);
+}
+
+a{
+    text-decoration: none;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s ease;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+.container{
+    max-width: 1344px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        padding: 0 16px;
+    }
+}
